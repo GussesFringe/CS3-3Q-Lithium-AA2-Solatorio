@@ -8,7 +8,7 @@ function newFunc(){
     let regionOfMonster = prompt("Enter the region/location of the monster: ");
     let nameOfMonster = prompt("Enter the name of the monster: ");
 
-    let monsterInfo = (regionOfMonster + " " + nameOfMonster).toUpperCase();
+    let monsterInfo = regionOfMonster.concat(" ",nameOfMonster).toUpperCase();
 
     document.getElementById('result').innerHTML = "After " + time + " hours," + " the population of " + monsterInfo + " has risen to " + exponentialPopulationGrowth;
 
